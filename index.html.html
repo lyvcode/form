@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Desenvolvimento Web: Formulários</title>
+</head>
+<body>
+  <form>
+  <fieldset class="dadosCadastro">
+        <label for="nome completo">Nome Completo:</label>
+        <input type="text" id="usuario" required><br/>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" required><br/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br/>
+        <label for="website">WebSite:</label>
+        <input type="text" id="website"/></br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco"><br/>
+      <div class="endereco_cid">
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" required/>
+          Cidade: <input type="text" id="cidade" required><br/>
+    
+    </div>
+        <div class="enderecoUl">
+          <label for="CEP">CEP:</label>
+          <input type="text" id="cep" required/>
+            UF:<select name="uf" id="uf" required>
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro </option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset class="DadosPessoais">
+          <label for="telefone">Telefone:</label> 
+          <input type="tel" id="telefone" required/><br/>
+          <div class="dadosPessoas_contato"></div>
+          <label for="texto">Data nascimento:</label>
+           <input type="text" id="nascimento" required/>
+    </div>
+           Sexo:
+           <input type="radio" name="sexo" id="feminino" value="feminino">F
+           <input type="radio" name="sexo" id="masculino" value="masculino"> M
+  
+    <div class="DadosPessoas_est">
+        <label for="celular">Celular: </label>
+        <input type="text" id="celular">
+        <label for="estado civil">Est.Civil:</label>
+        <select name="estado_civil">
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="viuvo">Viúvo</option>
+        </select>
+    </fieldset> 
+
+    <fieldset class="DadosLogin">
+      <div class="login">
+      <label for="login">Login: </label>
+      <input type="text" id="login" required/>
+      Senha:<input type="password" id="senha" required/>
+    </div>
+    <div class="checkbox">
+      <br>
+        Deseja Receber informações sobre os seguintes assuntos abaixo:<br><br>
+        <input type="checkbox" name="interesses" id="tecnologia">
+        <label for="tecnologia">Tecnologia</label>
+        <input type="checkbox" name="interesses" id="esporte">
+        <label for="esportes">Esportes</label>
+        <input type="checkbox" name="interesses" id="automoveis">
+        <label for="esportes">Automóveis</label>
+        <input type="checkbox" name="interesses" id="culinaria">
+        <label for="esportes">Culinária</label>
+        <input type="checkbox" name="interesses" id="politica">
+        <label for="esportes">Política</label>
+        <input type="checkbox" name="interesses" id="policial">
+        <label for="esportes">Policial</label>
+        <input type="checkbox" name="interesses" id="tempo">
+        <label for="esportes">Tempo</label><br>
+        <input type="checkbox" name="interesses" id="cultura">
+        <label for="esportes">Cultura</label>
+        <input type="checkbox" name="interesses" id="economia">
+        <label for="esportes">Economia</label>
+        <input type="checkbox" name="interesses" id="jogos">
+        <label for="esportes">Jogos</label>
+        <input type="checkbox" name="interesses" id="educacao">
+        <label for="esportes">Educação</label>
+        <input type="checkbox" name="interesses" id="viagem">
+        <label for="esportes">Viagem</label>
+        <input type="checkbox" name="interesses" id="emprego">
+        <label for="esportes">Empregos</label>
+        <input type="checkbox" name="interesses" id="modaestilo">
+        <label for="esportes">Moda e estilo</label><br><br>
+        <input type="checkbox" name="interesses" id="esportes" required> Li as regras de cadastro e autorizo a criação do usúario<br><br>
+
+        <input type="submit" value="Confirmar" class="button_confirmar">
+        <input type="reset" value="Retornar" class="button_confirmar">
+	
+    </fieldset>
+
+  </form>
+    
+</body>
+</html>
